@@ -20,11 +20,16 @@ class ComposerStaticInitba2cdafe4159691a4e843f918246a196
         ),
     );
 
+    public static $classMap = array (
+        'Eventviva\\ImageResize' => __DIR__ . '/..' . '/eventviva/php-image-resize/lib/ImageResize.php',
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitba2cdafe4159691a4e843f918246a196::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitba2cdafe4159691a4e843f918246a196::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitba2cdafe4159691a4e843f918246a196::$classMap;
 
         }, null, ClassLoader::class);
     }

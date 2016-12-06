@@ -4,9 +4,54 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "32e2fe00ecccd5887cb76dce2e657c8e",
-    "content-hash": "31e1a231748c35d1284cd29a7e192704",
+    "hash": "304d847d7a4ba003c6e0c30b7305b937",
+    "content-hash": "277dae976b825f7e5ca045d81fcb9211",
     "packages": [
+        {
+            "name": "eventviva/php-image-resize",
+            "version": "1.6.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/eventviva/php-image-resize.git",
+                "reference": "d46bc5a68a19d995ef3c6cde161baac22f015b43"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/eventviva/php-image-resize/zipball/d46bc5a68a19d995ef3c6cde161baac22f015b43",
+                "reference": "d46bc5a68a19d995ef3c6cde161baac22f015b43",
+                "shasum": ""
+            },
+            "require": {
+                "ext-exif": "*",
+                "ext-gd": "*",
+                "php": ">=5.3.0"
+            },
+            "type": "library",
+            "autoload": {
+                "classmap": [
+                    "lib"
+                ]
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Aditya Patadia",
+                    "homepage": "http://aditya.patadia.org/"
+                }
+            ],
+            "description": "PHP class to re-size and scale images",
+            "homepage": "https://github.com/eventviva/php-image-resize",
+            "keywords": [
+                "image",
+                "php",
+                "resize",
+                "scale"
+            ],
+            "time": "2016-10-14 18:27:53"
+        },
         {
             "name": "simple-crud/simple-crud",
             "version": "v6.8.0",
