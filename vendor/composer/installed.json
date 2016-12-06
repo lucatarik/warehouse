@@ -1,0 +1,51 @@
+[
+    {
+        "name": "simple-crud/simple-crud",
+        "version": "v6.8.0",
+        "version_normalized": "6.8.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/oscarotero/simple-crud.git",
+            "reference": "a39ee3f2c415237816c4521501336eaf4964bdb5"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/oscarotero/simple-crud/zipball/a39ee3f2c415237816c4521501336eaf4964bdb5",
+            "reference": "a39ee3f2c415237816c4521501336eaf4964bdb5",
+            "shasum": ""
+        },
+        "require": {
+            "php": ">=5.4"
+        },
+        "require-dev": {
+            "zendframework/zend-diactoros": "^1.3"
+        },
+        "time": "2016-11-06 16:09:16",
+        "type": "library",
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "SimpleCrud\\": "src"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Oscar Otero",
+                "email": "oom@oscarotero.com",
+                "homepage": "http://oscarotero.com",
+                "role": "Developer"
+            }
+        ],
+        "description": "Create/Read/Update/Delete easily",
+        "homepage": "https://github.com/oscarotero/simple-crud",
+        "keywords": [
+            "crud",
+            "mysql",
+            "sqlite"
+        ]
+    }
+]

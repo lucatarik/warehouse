@@ -1,0 +1,13 @@
+{
+    "name": "vendor/ware",
+    "description": "Description of project ware.",
+    "authors": [
+        {
+            "name": "mlx",
+            "email": "your@email.here"
+        }
+    ],
+    "require": {
+        "simple-crud/simple-crud": "^6.8"
+    }
+}
