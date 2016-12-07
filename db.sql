@@ -1,24 +1,41 @@
 CREATE TABLE "item" (
     `id`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     `name` TEXT,
+    `description` TEXT,
     `qty` INTEGER,
     `category_id` INTEGER,
-    `type`  TEXT,
     `location_id` INTEGER,
+    `type`  TEXT,
 
-    FOREIGN KEY(`location_id`) REFERENCES location(id)
+    FOREIGN KEY(`location_id`) REFERENCES location(id),
+    FOREIGN KEY(`category_id`) REFERENCES category(id)
 );
 
 CREATE TABLE `category` (
     `id`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     `name`  TEXT,
     `parent_id` INTEGER,
-    FOREIGN KEY(`parent_id`) REFERENCES category(id)	
+    FOREIGN KEY(`parent_id`) REFERENCES category(id)
 );
 
 CREATE TABLE `location` (
     `id`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     `name`  TEXT
+);
+
+CREATE TABLE `custom` (
+    `id`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+    `name`  TEXT,
+    `value` TEXT
+);
+
+CREATE TABLE `custom_item` (
+    `id`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
+    `custom_id`   INTEGER NOT NULL,
+    `item_id`  INTEGER NOT NULL,
+
+    FOREIGN KEY(`custom_id`) REFERENCES custom(id),
+    FOREIGN KEY(`item_id`)   REFERENCES item(id)
 );
 
 CREATE TABLE `category_item` (
