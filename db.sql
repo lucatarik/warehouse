@@ -14,6 +14,7 @@ CREATE TABLE "item" (
 CREATE TABLE `category` (
     `id`    INTEGER NOT NULL PRIMARY KEY AUTOINCREMENT UNIQUE,
     `name`  TEXT,
+    `color`  TEXT,
     `parent_id` INTEGER,
     FOREIGN KEY(`parent_id`) REFERENCES category(id)
 );
